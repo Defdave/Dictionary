@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+* {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(39, 36, 36);
+    color: #ffff;
+    font-weight: 400;
+    height: 100vh;
+    line-height: 2;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li {
+    display: inline;
+    list-style: none;
+    margin-right: 10px;
+}
+
+/* index-style */
+
+.index-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    text-align: center;
+}
+
+.index-container h1 {
+    font-size: 3rem;
+    font-size: "Montserrat";
+    font-weight: 900;
+    text-align: left;
+    margin: 0.5rem 0.5rem 0;
+}
+
+.input-word {
+    width: 22rem;
+    height: 2.8rem;
+    border-radius: 1rem;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.sear-btn {
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    border-radius: 1rem;
+    background-color: #fff;
+    border: none;
+}
+
+.sear-btn:hover {
+    background-color: rgba(97, 91, 91, 0.651);
+    color: #fff;
+    border: none;
+}
+
+.sear-btn > a {
+    text-decoration: none;
+    color: #000;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.sound-btn {
+    cursor: pointer;
+}
+
+@media (max-width: 950px) {
+    .sear-btn {
+        margin-top: 1rem;
+        width: 60%;
+    }
+}
+
+/* showcase-section */
+
+.section-show {
+    height: 40%;
+}
+
+.container {
+    font-size: "Montserrat";
+    font-weight: 900;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.showcase-word {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+.word {
+    font-size: 3rem;
+    font-size: "Montserrat";
+    font-weight: 900;
+}
+
+.showcase-word .sound-btn {
+    padding: 8px 55px;
+    border-radius: 12px;
+    border: solid rgb(94, 86, 86) 0.5px;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+.section-details {
+    border-top: solid rgb(94, 86, 86) 0.5px;
+    height: 60%;
+    width: 100%;
+}
+
+.details > * {
+    padding: 20px 15px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+
+/* part-of-speech-section */
+
+.partOfSpeech {
+    width: 16%;
+    border-right: solid rgb(94, 86, 86) 0.5px;
+}
+
+/* meaaning-section */
+
+.meaning {
+    width: 42%;
+    border-right: solid rgb(94, 86, 86) 0.5px;
+}
+
+.meaning div {
+    margin-bottom: 2rem;
+}
+
+.syan {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.syan > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.syan  div  a {
+    color: rgb(101, 101, 228);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* antonyms-synonyms-section */
+
+.antonyms-synonyms {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 42%;
+}
+
+.li-sent {
+    font-size: 12px;
+    font-style: italic;
+    color: rgb(148, 140, 140);
+}
+
+
+@media (max-width:650px) {
+    .section-show {
+        margin-bottom: 60px;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .showcase-word {
+        flex-direction: column;
+    }
+    .details {
+        flex-wrap: wrap;
+    }
+
+    .partOfSpeech {
+        width: 40%;
+        border: none;
+    }
+    .meaning {
+        width: 60%;
+        border: none;
+    }
+    .antonyms-origin {
+        width: 100%;
+    }
+}
+
